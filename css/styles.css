@@ -1,13 +1,27 @@
 body{
   font-family: "Montserrat";
 }
+/* Video */
+video#bgVideo{
+  position: fixed; /* Play the video in full screen mode */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  display: flex;
+  z-index: -1; /* Put the video behind all other elements*/
+}
 
-
+/* Headings */
 h1{
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   font-size: 3.2rem;
   line-height:1.5;
+  color: #fff;
 }
 h2{
   font-family: "Montserrat";
@@ -19,11 +33,12 @@ h3{
   font-family: "Montserrat";
   font-weight: bold;
   font-size: 1.5rem;
+  color: #fff;
 }
 p{
   color:#8f8f8f;
 }
-
+/* Title */
 #title{
   background-color:#55382c;
   color: #fff;
@@ -31,23 +46,71 @@ p{
 .container-fluid{
   padding:0 5%;    /*STACKING - 7% */
 }
-.giphy-title{
 
-  height:55%;
-  width:100%;
-}
 /* Navigation Bar */
-
-
-
-
 .nav-item{
   padding: 0 18px;
+ 
 }
 
 .nav-link{
   font-size:1.2rem;
   font-weight: thin;
+}
+
+/* Login Credentials */
+#login{
+  background: url("ha1.jpg");
+}
+.login-heading{
+  margin-top: 5%;
+  text-align: center;
+  color: #ac7f64;
+  
+}
+.login-heading :hover{
+color: #2f1912;
+}
+#sawo-container{
+  margin: auto;
+  align-items: center;
+
+}
+
+/* Main Heading  Animation */
+.patterns {
+  height: 100vh;
+}
+
+
+svg text {
+  padding-top: 1%;
+  font-family: Lora;
+ 
+  letter-spacing: 62.5%;
+  stroke: #ffa5d8;
+  font-size: 625%;
+  font-weight: 700;
+  stroke-width: 1;
+ 
+  animation: textAnimate 5s infinite alternate;
+  
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset:  10%;
+    fill:hsl(189, 68%, 75%)
+
+  }
+  
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(189, 68%, 75%,0%)
+  }
+  
 }
 
 /* Download buttons */
@@ -58,24 +121,29 @@ p{
 
 
 /* Features Section */
+#features{
+  padding:7% 15%;
+
+
+}
 .features-icon-color{
   color:#ac7f64;
   margin-bottom:1rem;
+ 
 }
 .features-icon-color:hover{
   color:#55382c;
+ 
 
 }
 .features-para{
-  color:#8f8f8f;
+  color:#ffff;
 }
 .features-box{
   text-align:center;
   padding:5%;
 }
-#features{
-  padding:7% 15%;
-}
+
 
 /* Testimonials Section */
 #testimonials{
@@ -83,6 +151,8 @@ p{
   text-align: center;
   background-color: #55382c;
   color:#fff;
+ 
+ 
 }
 .testimonials-image{
   width:30%;
@@ -97,10 +167,13 @@ p{
 /* CTA Section */
 
 #cta{
-  background-color: #fff;
+  /* background-color: #fff; */
   padding:7% 15%;
+  margin: auto;
   text-align: center;
+
   color: #2f1912;
+
 }
 .cta-heading{
   font-size: 3.3rem;
@@ -113,6 +186,10 @@ p{
   padding:3% 15%;
   text-align: center;
   background-color: #55382c;
+
+ 
+
+  /* backface-visibility: visible; */
 }
 .footer-icon{
   margin:1.8%;
@@ -133,7 +210,7 @@ p{
   font-family: "Montserrat";
 }
 
-.container-button {
+.container-button  {
   width: 20%;
   display: inline-block;
   padding: 16px;
@@ -145,6 +222,17 @@ p{
   border: 1px solid #55382c;
   border-radius: 5px;
 }
+.login-btn{
+  border: 1px solid #55382c;
+  font-family: Montserrat;
+  color: #fff;
+  background-color: #55382c;
+  margin: 0.5% 45%;
+  width: 10%;
+  height: 6%;
+  border-radius: 5px;
+}
+
 
 .container-image {
   width: 30%;
