@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <div id="sawo-container" style="height: 300px; width: 300px;"></div>
+ 
   <!-- The video -->
 <div class="vid-container">
     <video autoplay muted loop id="bgVideo">
@@ -43,10 +43,10 @@
               <a class="nav-link" href="#cta">Search</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
+              <a class="nav-link" href="login.html">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sign Up</a>
+              <a class="nav-link" href="login.html">Sign Up</a>
             </li>
 
           </ul>
@@ -55,6 +55,7 @@
 
       </nav>
   </section>
+
   <!-- Main Heading -->
   <div class="patterns">
     <svg width="100%" height="100%">
@@ -170,18 +171,7 @@
     crossorigin="anonymous"></script>
   <script src="/js/script.js"></script>
 
-  <script src="http://websdk.sawolabs.com/sawo.min.js"></script> 
-  <script>
-   var config = {  
-     containerID: "sawo-container", 
-   identifierType: "email",
-    // Add the API key copied from 2nd step 
-    apiKey: "14969fa2-7f7e-45e6-b0d0-635db91158d1", 
-    // Add a callback here to handle the payload sent by sdk
-     onSuccess: (payload) => {    console.log(payload) },}
-     var sawo = new Sawo(config);
-      sawo.showForm();
-      </script>
+  
 </body>
 
 </html>

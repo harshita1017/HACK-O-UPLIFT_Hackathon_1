@@ -14,6 +14,7 @@ video#bgVideo{
   display: flex;
   z-index: -1; /* Put the video behind all other elements*/
 }
+
 /* Headings */
 h1{
   font-family: 'Montserrat', sans-serif;
@@ -55,6 +56,25 @@ p{
 .nav-link{
   font-size:1.2rem;
   font-weight: thin;
+}
+
+/* Login Credentials */
+#login{
+  background: url("ha1.jpg");
+}
+.login-heading{
+  margin-top: 5%;
+  text-align: center;
+  color: #ac7f64;
+  
+}
+.login-heading :hover{
+color: #2f1912;
+}
+#sawo-container{
+  margin: auto;
+  align-items: center;
+
 }
 
 /* Main Heading  Animation */
@@ -190,7 +210,7 @@ svg text {
   font-family: "Montserrat";
 }
 
-.container-button {
+.container-button  {
   width: 20%;
   display: inline-block;
   padding: 16px;
@@ -202,6 +222,17 @@ svg text {
   border: 1px solid #55382c;
   border-radius: 5px;
 }
+.login-btn{
+  border: 1px solid #55382c;
+  font-family: Montserrat;
+  color: #fff;
+  background-color: #55382c;
+  margin: 0.5% 45%;
+  width: 10%;
+  height: 6%;
+  border-radius: 5px;
+}
+
 
 .container-image {
   width: 30%;

@@ -4,8 +4,8 @@ function getUserInput() {
     return inputValue;
     }
     document.querySelector(".js-go").addEventListener("click", function () {
-        var inputValue = document
-            .querySelector(".js-userinput").value;
+        // var inputValue = document
+        //     .querySelector(".js-userinput").value;
         var userInput = getUserInput();
         searchGiphy(userInput);
         });
