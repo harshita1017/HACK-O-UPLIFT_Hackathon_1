@@ -1,1 +1,0 @@
-# HACK-O-UPLIFT_Hackathon_1
